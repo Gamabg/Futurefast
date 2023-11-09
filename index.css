@@ -20,7 +20,26 @@ body{
     z-index: 1;
     overflow: hidden;
    }
-   
+   .btne2 {
+    display: flex;
+    justify-content: flex-end;
+    width: 6.5em;
+    height: 1.9em;
+    margin: 0.5em;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+   }
+   .col-lg-4 {
+    background-color: rgb(255, 255, 255);
+   }
    button:hover {
     color: black;
    }
@@ -58,7 +77,9 @@ body{
     box-shadow: 0 4px 14px rgb(0 0 0 / 20%);
   }
 
-
+  .card-title .text-center{
+    background-color: black;
+  }
 
   .footer-basic {
     padding:40px 0;
