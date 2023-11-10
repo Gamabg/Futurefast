@@ -1,0 +1,30 @@
+.logo{
+    width: 150px;
+    height: 150px;
+}
+.navbar{
+  height: 110px;
+}
+.btne {
+    width: 6.5em;
+    height: 2.3em;
+    margin: 0.5em;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+   }
+
+   .paidetodos{
+    display: flex;
+    flex-direction: row;
+    margin-top: 200px;
+    justify-content: center;
+    font-family: Arial;
+}

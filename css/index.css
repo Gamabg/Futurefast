@@ -468,3 +468,10 @@ p, ul li, ol li {
 .kilimanjaro_bottom_header_one .section_padding_50 .text-center{
   background-color: #000000;
 }
+
+.img3{
+  display: flex;
+  justify-content: center;
+  margin-left: 320px;
+  margin-bottom: 50px;
+}
