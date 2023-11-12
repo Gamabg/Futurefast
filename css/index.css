@@ -275,6 +275,7 @@ body{
 .foo_top_header_one {
   background-color: #000000;
   color: #000000;
+  font-family: Arial;
 }
 .section_padding_100_70 {
   padding-top: 100px;
@@ -474,4 +475,13 @@ p, ul li, ol li {
   justify-content: center;
   margin-left: 320px;
   margin-bottom: 50px;
+}
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 30px;
+  bottom: 30px;
+  z-index: 11;
+  animation: action 1s infinite alternate;
 }
