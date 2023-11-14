@@ -27,6 +27,8 @@ const Usuario = mongoose.model("Usuario", usuarioSchema);
 const cadiSchema = new mongoose.Schema({
   nome: { type: String },
   email: { type: String, required: true },
+  datanasc: { type: Date },
+  pais : { type : String },
   senha: { type: String }
 });
 
@@ -51,13 +53,15 @@ app.post("/login", async (req, res) => {
 });
 
 app.post("/cadastro-cadi", async (req, res) => {
-  const { nome, email, senha } = req.body;
+  const { nome, email, datanasc, pais, senha } = req.body;
 
   const hashedPassword = await bcrypt.hash(senha, 10);
 
   const cadi = new Cadi({
     nome: nome,
     email: email,
+    datanasc: datanasc,
+    pais: pais,
     senha: hashedPassword
   });
 
