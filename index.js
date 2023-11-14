@@ -10,8 +10,7 @@ const port = 3000;
 
 mongoose.connect('mongodb://127.0.0.1:27017/humansunity', {
   useNewUrlParser: true,
-  useUnifiedTopology: true,
-  serverSelectionTimeoutMS: 20000
+  useUnifiedTopology: true
 });
 
 mongoose.connection.on('error', err => {
@@ -33,7 +32,7 @@ const cadiSchema = new mongoose.Schema({
 
 const Cadi = mongoose.model("Cadi", cadiSchema);
 
-app.post("/cadastro-usuario", async (req, res) => {
+app.post("/login", async (req, res) => {
   const { email, senha } = req.body;
 
   const hashedPassword = await bcrypt.hash(senha, 10);
@@ -70,17 +69,22 @@ app.post("/cadastro-cadi", async (req, res) => {
   }
 });
 
-app.get("/cadastro-usuario", async (req, res) => {
-  res.sendFile(__dirname + "/cadastrousuario.html");
+app.get("/login", async (req, res) => {
+  res.sendFile(__dirname + "/pags/login.html");
 });
 
 app.get("/cadastro-cadi", async (req, res) => {
-  res.sendFile(__dirname + "/cadastro.html");
+  res.sendFile(__dirname + "/pags/cadastro.html");
 });
 
-app.get("/", async (req, res) => {
+app.get("/sobre", async (req, res) => {
+  res.sendFile(__dirname + "/pags/sobre.html");
+});
+
+app.get("/index", async (req, res) => {
   res.sendFile(__dirname + "/index.html");
 });
+
 
 app.listen(port, () => {
   console.log(`Servidor rodando na porta ${port}`);
