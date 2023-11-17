@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const express = require("express");
 const bodyParser = require("body-parser");
 const bcrypt = require("bcrypt");
+const path = require('path');
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -89,7 +90,15 @@ app.get("/index", async (req, res) => {
   res.sendFile(__dirname + "/index.html");
 });
 
+// Configurando a rota para arquivos estáticos (CSS, imagens, etc.)
+app.use('/static', express.static(path.join(__dirname, 'public')));
 
+// Rota principal
+app.get('/css', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', '/css/index.css'));
+});
+
+// Iniciar o servidor
 app.listen(port, () => {
   console.log(`Servidor rodando na porta ${port}`);
 });
