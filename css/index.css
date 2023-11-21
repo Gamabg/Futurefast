@@ -23,7 +23,7 @@ body{
     z-index: 1;
     overflow: hidden;
    }
-   .btne2 {
+  /*.btne2 {
     display: flex;
     justify-content: flex-end;
     width: 6.5em;
@@ -39,7 +39,7 @@ body{
     position: relative;
     z-index: 1;
     overflow: hidden;
-   }
+   } */
    .col-lg-4 {
     background-color: rgb(255, 255, 255);
    }
@@ -114,7 +114,7 @@ body{
 }
 
 .instagram:checked + .radio-tile .radio-icon svg {
-  fill: #fff;
+  fill: #ffffff;
 }
 
 .instagram:checked + .radio-tile .radio-label {
@@ -123,12 +123,12 @@ body{
 
 .instagram:focus + .radio-tile {
   background-color: #cc39a4;
-  border-color: #fff;
+  border-color: #ffffff;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 0 0 4px #b5c9fc;
 }
 .instagram:checked + .radio-tile {
   background-color: #cc39a4;
-  border-color: #fff;
+  border-color: #ffffff;
 }
 
 .instagram:focus + .radio-tile:before {
@@ -151,7 +151,7 @@ body{
 }
 
 .twitter:checked + .radio-tile .radio-icon svg {
-  fill: #fff;
+  fill: #ffffff;
 }
 
 .twitter:checked + .radio-tile .radio-label {
@@ -160,7 +160,7 @@ body{
 
 .twitter:focus + .radio-tile {
   background-color: #03a9f4;
-  border-color: #fff;
+  border-color: #ffffff;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 0 0 4px #b5c9fc;
 }
 .twitter:checked + .radio-tile {
@@ -187,7 +187,7 @@ body{
 }
 
 .discord:checked + .radio-tile .radio-icon svg {
-  fill: #fff;
+  fill: #ffffff;
 }
 
 .discord:checked + .radio-tile .radio-label {
@@ -275,6 +275,7 @@ body{
 .foo_top_header_one {
   background-color: #000000;
   color: #000000;
+  font-family: Arial;
 }
 .section_padding_100_70 {
   padding-top: 100px;
@@ -292,7 +293,7 @@ body{
   margin-bottom: 30px;
 }
 .kilimanjaro_single_contact_info > p, .kilimanjaro_single_contact_info > h5, .kilimanjaro_blog_area > a, .foo_top_header_one .kilimanjaro_part > p {
-  color: rgba(255,255,255,.5);
+  color: rgb(255, 255, 255);
 }
 p, ul li, ol li {
   font-weight: 300;
@@ -339,9 +340,9 @@ ol li, ul li {
   list-style: outside none none;
 }
 .kilimanjaro_widget a {
-  border: 1px solid #333;
+  border: 1px solid #ffffff;
   border-radius: 6px;
-  color: #888;
+  color: #ffffff;
   display: inline-block;
   font-size: 13px;
   margin-bottom: 4px;
@@ -352,15 +353,15 @@ ul {
   padding: 0;
 }
 .kilimanjaro_links a {
-  border-bottom: 1px solid #333;
-  color: rgba(255,255,255,.5);
+  border-bottom: 1px solid #ffffff;
+  color: rgb(255, 255, 255);
   display: block;
   font-size: 13px;
   margin-bottom: 5px;
   padding-bottom: 10px;
 }
 .kilimanjaro_links a {
-  color: rgba(255,255,255,.5);
+  color: rgb(255, 255, 255);
   font-size: 13px;
 }
 top-15 {
@@ -379,9 +380,9 @@ p, ul li, ol li {
   font-weight: 300;
 }
 .kilimanjaro_social_links a {
-  border: 1px solid #333;
+  border: 1px solid #ffffff;
   border-radius: 6px;
-  color: #888;
+  color: #ffffff;
   display: inline-block;
   font-size: 13px;
   margin-bottom: 3px;
@@ -393,7 +394,7 @@ p, ul li, ol li {
   margin-bottom: 5px;
 }
 .kilimanjaro_blog_area > p {
-  color: rgba(255,255,255,.5);
+  color: rgb(255, 255, 255);
   line-height: 1.3;
   margin-bottom: 0;
 }
@@ -450,8 +451,8 @@ p, ul li, ol li {
   z-index: 1;
 }
 .kilimanjaro_links a {
-  border-bottom: 1px solid #333;
-  color: rgba(255,255,255,.5);
+  border-bottom: 1px solid #ffffff;
+  color: rgb(255, 255, 255);
   display: block;
   font-size: 13px;
   margin-bottom: 5px;
@@ -464,4 +465,23 @@ p, ul li, ol li {
   }
 .hr{
   background-color: black;
+}
+.kilimanjaro_bottom_header_one .section_padding_50 .text-center{
+  background-color: #000000;
+}
+
+.img3{
+  display: flex;
+  justify-content: center;
+  margin-left: 320px;
+  margin-bottom: 50px;
+}
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 30px;
+  bottom: 30px;
+  z-index: 11;
+  animation: action 1s infinite alternate;
 }
